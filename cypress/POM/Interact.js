@@ -3,6 +3,7 @@ class Interact {
     texto1 = "Tarea 1"
     texto2 = "Tarea 2"
     texto3 = "Tarea 3"
+//paragithubA
 
 
     clickmasintro() {
@@ -39,4 +40,5 @@ class Interact {
     }
  }
  
+
  export default Interact

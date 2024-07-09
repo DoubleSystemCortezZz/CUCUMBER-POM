@@ -3,6 +3,7 @@ import Main from "../POM/Main"
 import Interact from "../POM/Interact"
 import Erase from "../POM/Erase"
 
+//paragithubA
 describe('Practica', () => {
     const Principal = new Main()
     const Interactuar = new Interact()

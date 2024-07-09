@@ -1,5 +1,6 @@
 import Interact from "./Interact"
 const Interactuar = new Interact()
+//paragithubA
 
 class Erase {
 
