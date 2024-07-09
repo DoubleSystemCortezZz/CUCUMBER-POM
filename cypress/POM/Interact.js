@@ -1,30 +1,15 @@
 class Interact {
 
-    texto1 = "Tarea 1"
-    texto2 = "Tarea 2"
-    texto3 = "Tarea 3"
 //paragithubA
 
 
-    clickmasintro() {
-        cy.get('.new-todo').click().type(this.texto1 + "{enter}")
+    clickmasintro(texto1) {
+        cy.get('.new-todo').click().type(texto1 + "{enter}")
     }
 
-    clickmasintro2() {
-        cy.get('.new-todo').click().type(this.texto2 + "{enter}")
-    }
-
-    clickmasintro3() {
-        cy.get('.new-todo').click().type(this.texto3 + "{enter}")
-    }
-
-    clickmasintro4() {
-        cy.get('.new-todo').click().type(this.texto4 + "{enter}")
-    }
-
-    clickmasintro5() {
-        cy.get('.new-todo').click().type(this.texto5 + "{enter}")
-    }
+    borra(texto1){
+        cy.contains (texto1).parent().find('.destroy').invoke('show').click()
+        }
 
     dobleclick() {
         cy.get(':nth-child(3) > .view > [data-testid="todo-item-label"] ').dblclick()
